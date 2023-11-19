@@ -22,35 +22,35 @@
       <!-- Left-side read-only text boxes -->
       <div class="col-md-6">
         <label for="chatHistoryTextBox">Chat History from SupportFlow Conversation</label>
-        <textarea class="form-control" rows="19" readonly id="chatHistoryTextBox"></textarea>
+        <textarea class="form-control" rows="19" readonly id="chatHistoryTextBox">{{data['history']}}</textarea>
         <label for="chatHistoryTextBox">Chat Summary</label>
-        <textarea class="form-control" rows="2" readonly id="chatSummaryTextBox"></textarea>
+        <textarea class="form-control" rows="2" readonly id="chatSummaryTextBox">{{data['summary']}}</textarea>
       </div>
       <!-- Right-side read-only textboxes -->
       <div class="col-md-6">
         <div class="form-group">
           <label for="nameTextBox">Customer Name</label>
-          <input type="text" class="form-control" id="customerNameTextBox" readonly>
+          <input type="text" class="form-control" id="customerNameTextBox" readonly value="{{data['customer_name']}}">
         </div>
         <div class="form-group">
           <label for="customerIdTextBox">Customer ID</label>
-          <input type="text" class="form-control" id="customerIdTextBox" readonly>
+          <input type="text" class="form-control" id="customerIdTextBox" readonly value="{{data['customer_id']}}">
         </div>
         <div class="form-group">
           <label for="customerEmailTextBox">Customer Email</label>
-          <input type="text" class="form-control" id="customerEmailTextBox" readonly>
+          <input type="text" class="form-control" id="customerEmailTextBox" readonly value="{{data['customer_email']}}">
         </div>
         <div class="form-group">
           <label for="whatCustomerWantsTextBox">Escalation Reason</label>
-          <input type="text" class="form-control" id="whatCustomerWantsTextBox" readonly>
+          <input type="text" class="form-control" id="whatCustomerWantsTextBox" readonly value="{{data['escalation_reason']}}">
         </div>
         <div class="form-group">
           <label for="solutionByBotTextBox">Best Solution Made by SupportFlow</label>
-          <input type="text" class="form-control" id="solutionByBotTextBox" readonly>
+          <input type="text" class="form-control" id="solutionByBotTextBox" readonly value="{{data['best_solution']}}">
         </div>
         <div class="form-group">
           <label for="moreBotSolutionsTextBox">Other Possible Solutions by SupportFlow</label>
-          <textarea type="text" class="form-control" rows="6" id="moreBotSolutionsTextBox" readonly></textarea>
+          <textarea type="text" class="form-control" rows="6" id="moreBotSolutionsTextBox" readonly>{{data['other_solutions']}}</textarea>
         </div>
       </div>
     </div>
